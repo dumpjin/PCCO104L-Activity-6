@@ -125,14 +125,14 @@ class Program{
                 break;
             }
 
-            int numhaha;
-            if (!int.TryParse(input, out numhaha) || numhaha <= 0)
+            int num;
+            if (!int.TryParse(input, out num) || num <= 0)
             {
                 Console.WriteLine("Invalid input. Please enter a positive integer or 'exit' to return to main menu.");
                 continue;
             }
 
-            for (int i = 1; i <= numhaha; i++)
+            for (int i = 1; i <= num; i++)
             {
                 if (i % 3 == 0 && i % 5 == 0)
                 {
@@ -185,9 +185,9 @@ class Program{
             break;
         }
 
-        if (int.TryParse(input, out int numput) && numput > 0) {
-            for (int i = 1; i <= numput; ++i) {
-                for (int j = 1; j <= numput - i; ++j) {
+        if (int.TryParse(input, out int numinput) && numinput > 0) {
+            for (int i = 1; i <= numinput; ++i) {
+                for (int j = 1; j <= numinput - i; ++j) {
                     Console.Write(" ");
                 }
                 for (int k = 1; k <= 2 * i - 1; ++k) {
